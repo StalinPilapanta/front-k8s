@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React app deployed in Kubernetes and login with okta</h1>
+        <div className='form-box'>
+          <input type="text" name="movieName" placeholder='Name Movie'/>
+          <input type="text" name="review" placeholder='Review'/>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
     </div>
   );
 }
