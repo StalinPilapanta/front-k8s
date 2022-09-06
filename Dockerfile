@@ -1,11 +1,3 @@
-FROM node:current-alpine
+FROM nginx:alpine
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN yarn install
-
-COPY . .
-
-CMD ["yarn", "start"]
+COPY ./build /usr/share/nginx/html
