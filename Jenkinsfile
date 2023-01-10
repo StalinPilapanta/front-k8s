@@ -14,8 +14,9 @@ pipeline{
         }
         stage("Docker Build"){
             steps{
+                sh '''yarn install && yarn build
+                      '''
                 script{
-                    yarn install
                     dockerImage = docker.build registry
                 }
             }

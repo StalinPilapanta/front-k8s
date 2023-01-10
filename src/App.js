@@ -7,6 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>React app deployed in Kubernetes and login with okta</h1>
+        <div>
+          <img src='directv.png'></img>
+        </div>
         <div className='form-box'>
           <input type="text" name="movieName" placeholder='Name Movie'/>
           <input type="text" name="review" placeholder='Review'/>
